@@ -1,0 +1,1 @@
+const l=JSON.parse('[{"title":"Hello World — 博客的第一篇文章","slug":"2026-06-28-hello-world","date":"2026-06-28","url":"/posts/2026-06-28-hello-world"},{"title":"测试这件小事","slug":"2026-06-28-testing","date":"2026-06-28","url":"/posts/2026-06-28-testing"}]');export{l as d};
