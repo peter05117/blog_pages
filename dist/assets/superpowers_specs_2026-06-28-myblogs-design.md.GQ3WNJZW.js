@@ -1,0 +1,34 @@
+import{_ as s,o as n,c as e,a2 as t}from"./chunks/framework.Gmtfq6fI.js";const b=JSON.parse('{"title":"MyBlogs — 个人博客设计规范","description":"","frontmatter":{},"headers":[],"relativePath":"superpowers/specs/2026-06-28-myblogs-design.md","filePath":"superpowers/specs/2026-06-28-myblogs-design.md"}'),l={name:"superpowers/specs/2026-06-28-myblogs-design.md"};function p(i,a,d,o,r,c){return n(),e("div",null,[...a[0]||(a[0]=[t(`<h1 id="myblogs-—-个人博客设计规范" tabindex="-1">MyBlogs — 个人博客设计规范 <a class="header-anchor" href="#myblogs-—-个人博客设计规范" aria-label="Permalink to &quot;MyBlogs — 个人博客设计规范&quot;">​</a></h1><h2 id="项目概述" tabindex="-1">项目概述 <a class="header-anchor" href="#项目概述" aria-label="Permalink to &quot;项目概述&quot;">​</a></h2><ul><li><strong>项目名称</strong>: MyBlogs</li><li><strong>项目类型</strong>: 个人博客（技术 + 生活 + 兴趣综合型）</li><li><strong>面向用户</strong>: 博主本人（内容记录）+ 偶然路过的网友</li><li><strong>核心目标</strong>: 提供干净、快速的阅读体验，让博主专注于写作</li></ul><hr><h2 id="技术栈" tabindex="-1">技术栈 <a class="header-anchor" href="#技术栈" aria-label="Permalink to &quot;技术栈&quot;">​</a></h2><table tabindex="0"><thead><tr><th>层级</th><th>选型</th><th>版本</th></tr></thead><tbody><tr><td>框架</td><td>VitePress</td><td>1.6.4</td></tr><tr><td>UI 层</td><td>Vue 3</td><td>3.x</td></tr><tr><td>模块系统</td><td>ES Module</td><td>-</td></tr><tr><td>包管理器</td><td>npm</td><td>latest</td></tr><tr><td>部署</td><td>GitHub Pages</td><td>-</td></tr><tr><td>内容</td><td>Markdown</td><td>-</td></tr></tbody></table><hr><h2 id="视觉设计" tabindex="-1">视觉设计 <a class="header-anchor" href="#视觉设计" aria-label="Permalink to &quot;视觉设计&quot;">​</a></h2><h3 id="色彩系统" tabindex="-1">色彩系统 <a class="header-anchor" href="#色彩系统" aria-label="Permalink to &quot;色彩系统&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>--bg-deepest:    #0D0D0D  — 终端底色，微暖非纯黑</span></span>
+<span class="line"><span>--bg-card:       #161616  — 卡片/代码区背景</span></span>
+<span class="line"><span>--border-subtle: #2B2B2B  — 分隔线</span></span>
+<span class="line"><span>--text-primary:  #D4D4CC  — 正文暖灰白</span></span>
+<span class="line"><span>--text-muted:    #6B6B6B  — 次要文字</span></span>
+<span class="line"><span>--accent:        #E5A040  — 琥珀强调色</span></span>
+<span class="line"><span>--code-green:    #7EB87E  — 终端绿（柔和版）</span></span></code></pre></div><h3 id="字体系统" tabindex="-1">字体系统 <a class="header-anchor" href="#字体系统" aria-label="Permalink to &quot;字体系统&quot;">​</a></h3><table tabindex="0"><thead><tr><th>角色</th><th>字体</th></tr></thead><tbody><tr><td>标题/导航</td><td>JetBrains Mono</td></tr><tr><td>正文</td><td>PingFang SC, Microsoft YaHei, sans-serif</td></tr><tr><td>代码</td><td>JetBrains Mono</td></tr></tbody></table><h3 id="布局结构" tabindex="-1">布局结构 <a class="header-anchor" href="#布局结构" aria-label="Permalink to &quot;布局结构&quot;">​</a></h3><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>┌─────────────────────────────────────────┐</span></span>
+<span class="line"><span>│  [MyBlogs]              [文章] [关于]   │  ← 顶部导航</span></span>
+<span class="line"><span>├─────────────────────────────────────────┤</span></span>
+<span class="line"><span>│  guest@myblogs:~$ cat README.md         │  ← 首页打字机动画</span></span>
+<span class="line"><span>│  ┌──────────────────────────────┐      │</span></span>
+<span class="line"><span>│  │  YYYY-MM-DD  文章标题        │      │  ← 文章列表</span></span>
+<span class="line"><span>│  │  YYYY-MM-DD  另一篇文章      │      │</span></span>
+<span class="line"><span>│  └──────────────────────────────┘      │</span></span>
+<span class="line"><span>│  $ █                                   │</span></span>
+<span class="line"><span>├─────────────────────────────────────────┤</span></span>
+<span class="line"><span>│  © 2026 MyBlogs                        │</span></span>
+<span class="line"><span>└─────────────────────────────────────────┘</span></span></code></pre></div><h3 id="标志性元素" tabindex="-1">标志性元素 <a class="header-anchor" href="#标志性元素" aria-label="Permalink to &quot;标志性元素&quot;">​</a></h3><p>首页顶部打字机终端提示符，逐字打出 <code>guest@myblogs:~$ cat README.md</code>，然后显示个人介绍。</p><hr><h2 id="项目结构" tabindex="-1">项目结构 <a class="header-anchor" href="#项目结构" aria-label="Permalink to &quot;项目结构&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>personal_blog/</span></span>
+<span class="line"><span>├── docs/                         # VitePress 内容与配置目录</span></span>
+<span class="line"><span>│   ├── .vitepress/</span></span>
+<span class="line"><span>│   │   ├── config.ts             # VitePress 配置文件</span></span>
+<span class="line"><span>│   │   └── theme/</span></span>
+<span class="line"><span>│   │       ├── index.ts          # 主题入口</span></span>
+<span class="line"><span>│   │       └── style.css         # 自定义样式（色彩/字体/布局）</span></span>
+<span class="line"><span>│   ├── index.md                  # 首页</span></span>
+<span class="line"><span>│   ├── posts/                    # 文章目录</span></span>
+<span class="line"><span>│   │   └── 2026-06-28-hello-world.md</span></span>
+<span class="line"><span>│   └── about.md                  # 关于页</span></span>
+<span class="line"><span>├── .github/</span></span>
+<span class="line"><span>│   └── workflows/</span></span>
+<span class="line"><span>│       └── deploy.yml            # GitHub Pages 自动部署</span></span>
+<span class="line"><span>├── package.json</span></span>
+<span class="line"><span>├── .gitignore</span></span>
+<span class="line"><span>└── README.md</span></span></code></pre></div><hr><h2 id="功能清单-mvp" tabindex="-1">功能清单（MVP） <a class="header-anchor" href="#功能清单-mvp" aria-label="Permalink to &quot;功能清单（MVP）&quot;">​</a></h2><ol><li>首页：打字机动画 + 文章列表</li><li>文章详情页：Markdown 渲染 + 代码高亮</li><li>关于页</li><li>暗色主题（默认，唯一主题）</li><li>响应式布局（手机可用）</li><li>文章按日期排序</li></ol><hr><h2 id="约束条件" tabindex="-1">约束条件 <a class="header-anchor" href="#约束条件" aria-label="Permalink to &quot;约束条件&quot;">​</a></h2><ul><li>不做管理后台 — 文章直接写 <code>.md</code> 文件</li><li>不做评论系统 — 保持纯静态</li><li>不使用非必要 JS — 除了打字机动画和 VitePress 自带功能</li><li>部署到 GitHub Pages，仓库 <code>https://github.com/peterWjx/personal_blog</code></li></ul><hr><h2 id="部署流程" tabindex="-1">部署流程 <a class="header-anchor" href="#部署流程" aria-label="Permalink to &quot;部署流程&quot;">​</a></h2><ol><li>本地写 Markdown 文章 → 放入 <code>docs/posts/</code></li><li><code>git push origin main</code></li><li>GitHub Actions 自动构建 → 部署到 GitHub Pages</li></ol><hr><p><em>创建时间: 2026-06-28</em></p>`,30)])])}const g=s(l,[["render",p]]);export{b as __pageData,g as default};
